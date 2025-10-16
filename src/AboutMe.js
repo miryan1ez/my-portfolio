@@ -7,16 +7,7 @@ import NavbarOther from "./NavbarOther";
 import Loader from "./Loader";
 const AboutMe = () => {
 
-//     const [loading, setLoading] = useState(true);
 
- 
-//   useEffect(() => {
-//     const timer = setTimeout(() => setLoading(false), 1000); 
-//     return () => clearTimeout(timer);
-//   }, []);
-
-
-//   if (loading) return <Loader />;
 
   const settings = {
     dots: true,
@@ -32,8 +23,7 @@ const AboutMe = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen font-poppins flex flex-col items-center px-6 py-16 ">
     <NavbarOther />
-      {/* Top Section */}
-      <div className="w-full max-w-5xl bg-gray-800 rounded-2xl shadow-lg p-10 mt-10 border border-[#e0aaff]/30">
+      {/* Top Section */}      <div className="w-full max-w-5xl bg-gray-800 rounded-2xl shadow-lg p-10 mt-10 border border-[#e0aaff]/30">
         <h1 className="text-4xl font-bold text-[#e0aaff] mb-6">About Me</h1>
         <p className="text-gray-300 leading-relaxed text-lg">
           Hello! I’m <span className="text-[#e0aaff] font-semibold">Von Voltaire</span>, 
@@ -47,7 +37,6 @@ const AboutMe = () => {
           I also enjoy designing interfaces that are both aesthetic and intuitive.
         </p>
 
-        {/* Education */}
         <p className="text-gray-400 mt-6">
           I studied at{" "}
           <span className="text-[#e0aaff] font-medium">
@@ -61,7 +50,7 @@ const AboutMe = () => {
           and app development.
         </p>
 
-        {/* 🎓 Carousel for TUP */}
+
         <div className="mt-4 rounded-xl overflow-hidden border border-[#e0aaff]/20">
           <Slider {...settings}>
             <img src="https://res.cloudinary.com/dglawxazg/image/upload/v1759869256/received_766800839261202_cqwf6a_1_bbqsrx.jpg" alt="TUP Campus" className="w-full h-72 object-cover object-[center_35%]" />
@@ -70,7 +59,6 @@ const AboutMe = () => {
           </Slider>
         </div>
 
-        {/* Internship */}
         <p className="text-gray-400 mt-6">
           I have been an intern at{" "}
           <a
@@ -86,7 +74,6 @@ const AboutMe = () => {
           checking and testing hardware to ensure quality and functionality.
         </p>
 
-        {/* 🏢 Carousel for Internship */}
         <div className="mt-4 rounded-xl overflow-hidden border border-[#e0aaff]/20">
           <Slider {...settings}>
             <img src="https://res.cloudinary.com/dglawxazg/image/upload/v1759868572/20250805_082522_suixli.jpg" alt="Techno Global Team Office" className="w-full h-72 object-cover " />
@@ -97,11 +84,11 @@ const AboutMe = () => {
       </div>
 
 
-{/* Bottom Columns */}
+
 <div className="w-full max-w-5xl mx-auto mt-12 space-y-6">
-  {/* Row 1 — 3 Columns */}
+
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-    {/* Column 1: Jobs/Projects */}
+
     <div className="bg-gray-800 rounded-2xl p-6 border border-[#e0aaff]/30 shadow-md flex flex-col items-center">
       <BriefcaseIcon className="w-10 h-10 text-[#e0aaff] mb-3" />
       <h2 className="text-2xl font-semibold text-[#e0aaff] mb-4">Jobs / Projects</h2>
@@ -114,7 +101,7 @@ const AboutMe = () => {
       </ul>
     </div>
 
-    {/* Column 2: APIs Tried */}
+
     <div className="bg-gray-800 rounded-2xl p-6 border border-[#e0aaff]/30 shadow-md flex flex-col items-center">
       <CodeBracketIcon className="w-10 h-10 text-[#e0aaff] mb-3" />
       <h2 className="text-2xl font-semibold text-[#e0aaff] mb-4">APIs Tried</h2>
@@ -127,7 +114,7 @@ const AboutMe = () => {
 </ul>
     </div>
 
-    {/* Column 3: Software / Websites */}
+
    <div className="bg-gray-800 rounded-2xl p-6 border border-[#e0aaff]/30 shadow-md flex flex-col items-center">
   <GlobeAltIcon className="w-10 h-10 text-[#e0aaff] mb-3" />
   <h2 className="text-2xl font-semibold text-[#e0aaff] mb-4">Software / Websites</h2>
@@ -157,9 +144,9 @@ const AboutMe = () => {
 </div>
   </div>
 
-  {/* Row 2 — 2 Columns Centered */}
+
   <div className="flex flex-col md:flex-row justify-center gap-6">
-    {/* Column 4: Skills */}
+
     <div className="bg-gray-800 rounded-2xl p-6 border border-[#e0aaff]/30 shadow-md flex flex-col items-center md:w-1/3">
       <SparklesIcon className="w-10 h-10 text-[#e0aaff] mb-3" />
       <h2 className="text-2xl font-semibold text-[#e0aaff] mb-4">Skills</h2>
@@ -172,7 +159,7 @@ const AboutMe = () => {
       </ul>
     </div>
 
-    {/* Column 5: Programming Languages */}
+
     <div className="bg-gray-800 rounded-2xl p-6 border border-[#e0aaff]/30 shadow-md flex flex-col items-center md:w-1/3">
   <CodeBracketIcon className="w-10 h-10 text-[#e0aaff] mb-3" />
   <h2 className="text-2xl font-semibold text-[#e0aaff] mb-4">Languages</h2>

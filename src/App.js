@@ -11,7 +11,7 @@ function App() {
  
     
 
-      {/* Define routes */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />

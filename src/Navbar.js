@@ -9,7 +9,7 @@ function Navbar({ highlightStep, onCheck }) {
     3: { text: "Reach me here", label: "Contact" },
   };
 
-  const routes = ["/", "/about-me", "/contacts"]; // ✅ Actual pages
+  const routes = ["/", "/about-me", "/contacts"]; 
 
   return (
     <nav
@@ -39,7 +39,7 @@ function Navbar({ highlightStep, onCheck }) {
               return (
                 <li key={item} className={isActive ? "relative" : ""}>
                   <Link
-                    to={routes[index]} // ✅ use actual route here
+                    to={routes[index]} 
                     className={`transition-colors ${
                       isActive ? "text-[#e0aaff]" : "hover:text-[#e0aaff]"
                     }`}
@@ -49,10 +49,10 @@ function Navbar({ highlightStep, onCheck }) {
 
                   {isActive && (
                     <div className="absolute left-1/2 -translate-x-1/2 top-10 flex flex-col items-center">
-                      {/* Arrow above box */}
+                    
                       <ArrowLongDownIcon className="w-6 h-6 text-[#e0aaff] animate-bounce mb-3" />
 
-                      {/* Tutorial box */}
+                  
                       <div className="bg-gray-900/90 border border-[#e0aaff]/50 rounded-xl p-3 shadow-lg w-44 text-center mt-1">
                         <p className="text-md text-gray-300 mb-2">
                           {info.text}

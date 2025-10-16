@@ -61,9 +61,9 @@ function Contact() {
     <div className="bg-gray-900 text-white min-h-screen font-poppins">
       <Navbar />
 
-      {/* Centered container */}
+
       <section className="flex flex-col items-center justify-center min-h-[80vh] px-8 text-center">
-        {/* Intro Text */}
+
         <div className="max-w-2xl mb-8">
           <h2 className="text-4xl font-bold mb-3 text-[#e0aaff]">Let’s Connect!</h2>
           <p className="text-lg text-gray-300 mb-4">
@@ -75,7 +75,7 @@ function Contact() {
           </p>
         </div>
 
-        {/* Contact Box */}
+
         <div className="w-full max-w-3xl bg-gray-800 border border-[#e0aaff]/40 rounded-2xl p-8 shadow-lg hover:shadow-[#e0aaff]/30 transition-all">
           <h3 className="text-2xl font-semibold mb-6 text-center text-[#e0aaff]">
             Reach Me On

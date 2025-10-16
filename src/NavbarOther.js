@@ -9,7 +9,7 @@ function NavbarOther({ highlightStep, onCheck }) {
     3: { text: "Reach me here", label: "Contact" },
   };
 
-  const routes = ["/", "/about-me", "/contacts"]; // ✅ Actual pages
+  const routes = ["/", "/about-me", "/contacts"]; 
 
   return (
 <nav
@@ -18,8 +18,7 @@ function NavbarOther({ highlightStep, onCheck }) {
 
 
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 pt-6 relative">
-        {/* Logo */}
-        <Link to="/" className="flex items-center space-x-3 ml-[-220px]">
+        {/* Logo */}        <Link to="/" className="flex items-center space-x-3 ml-[-220px]">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
@@ -30,7 +29,7 @@ function NavbarOther({ highlightStep, onCheck }) {
           </span>
         </Link>
 
-        {/* Links */}
+
         <div className="hidden md:block relative">
           <ul className="flex gap-8 text-white font-medium">
             {["Home", "About Me", "Contact"].map((item, index) => {
@@ -41,7 +40,7 @@ function NavbarOther({ highlightStep, onCheck }) {
               return (
                 <li key={item} className={isActive ? "relative" : ""}>
                   <Link
-                    to={routes[index]} // ✅ use actual route here
+                    to={routes[index]} 
                     className={`transition-colors ${
                       isActive ? "text-[#e0aaff]" : "hover:text-[#e0aaff]"
                     }`}
@@ -51,10 +50,10 @@ function NavbarOther({ highlightStep, onCheck }) {
 
                   {isActive && (
                     <div className="absolute left-1/2 -translate-x-1/2 top-10 flex flex-col items-center">
-                      {/* Arrow above box */}
+                   
                       <ArrowLongDownIcon className="w-6 h-6 text-[#e0aaff] animate-bounce mb-3" />
 
-                      {/* Tutorial box */}
+                 
                       <div className="bg-gray-900/90 border border-[#e0aaff]/50 rounded-xl p-3 shadow-lg w-44 text-center mt-1">
                         <p className="text-md text-gray-300 mb-2">
                           {info.text}
