@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profileImg from "./vonimage.png";
+
 import "@fontsource/poppins";
 import "@fontsource/poppins/700.css";
 import { ArrowDownTrayIcon, XMarkIcon } from "@heroicons/react/24/solid";
